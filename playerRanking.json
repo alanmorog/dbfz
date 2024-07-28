@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "status": "none",
+        "nombre": "Grillo",
+        "puntos": 0,
+        "victorias": 0,
+        "derrotas": 0
+
+    },
+    {
+        "id": 2,
+        "status": "none",
+        "nombre": "Dimox",
+        "puntos": 0,
+        "victorias": 0,
+        "derrotas": 0
+
+    },
+    {
+        "id": 3,
+        "status": "none",
+        "nombre": "Pipi",
+        "puntos": 0,
+        "victorias": 0,
+        "derrotas": 0
+
+    },
+    {
+        "id": 4,
+        "status": "none",
+        "nombre": "Dario",
+        "puntos": 0,
+        "victorias": 0,
+        "derrotas": 0
+
+    },
+    {
+        "id": 5,
+        "status": "none",
+        "nombre": "Maxi",
+        "puntos": 0,
+        "victorias": 0,
+        "derrotas": 0
+
+    },
+    {
+        "id": 6,
+        "status": "none",
+        "nombre": "Sergio",
+        "puntos": 0,
+        "victorias": 0,
+        "derrotas": 0
+
+    },
+    {
+        "id": 7,
+        "status": "none",
+        "nombre": "Leandro",
+        "puntos": 0,
+        "victorias": 0,
+        "derrotas": 0
+
+    },
+    {
+        "id": 8,
+        "status": "none",
+        "nombre": "Alan",
+        "puntos": 0,
+        "victorias": 0,
+        "derrotas": 0
+
+    },
+    {
+        "id": 9,
+        "status": "none",
+        "nombre": "Gino",
+        "puntos": 0,
+        "victorias": 0,
+        "derrotas": 0
+
+    },
+    {
+        "id": 10,
+        "status": "none",
+        "nombre": "Cuba",
+        "puntos": 0,
+        "victorias": 0,
+        "derrotas": 0
+
+    }
+]

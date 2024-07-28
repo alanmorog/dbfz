@@ -1,0 +1,281 @@
+/* Ajustes generales de la pagina ---------------------------------------------- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubik Mono One", monospace;
+    height: 50vh;
+}
+
+/* Body BackgroundColor Degradado */
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(45deg,#FF4500, #FFA500, #FFD700, #FF8C00);
+    background-size: 1000% 1000%;
+}
+
+header {
+    height: 50vh;
+    background-image: url('../../assets/img/dbfz_banner.webp');
+    /* Imagen de fondo para la página */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+}
+
+header .logo {
+    display: flex;
+    object-fit: cover;
+    max-width: 100%;
+    width: 500px;
+    height: auto;
+    vertical-align: middle;
+    margin: auto;
+}
+
+/* Estilos de navBar  -----------------------------------------------------------*/
+
+.navBar ul {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-block: 5px solid #120e02;
+    background-color: #ff8c00a8;
+    list-style: none;
+}
+
+.navBar li {
+    padding-inline: 50px;
+    display: inline-block;
+}
+
+.navBar a {
+    text-align: center;
+    color: #000;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+        1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+    text-decoration: none;
+    width: 100px;
+    display: block;
+}
+
+.navBar a:hover {
+    color: #ffb443;
+}
+
+/* Login */
+form {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    margin-top: 210px;
+    margin-left: 0px;
+    color: #DAA520;
+    text-shadow: 2px 2px 2px #443907;
+    border: 2px solid #0a042abd;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.482)
+}
+
+/* estilos de ranking --------------------------------------------------------*/
+body,
+table {
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+}
+
+table {
+    margin-top: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    background-color: #f9f9f9;
+}
+
+th,
+td {
+    border: 6px solid #ffffff;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #ff7f00;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+/* estilos de Ficha Tecnica -------------------------------------------------------------*/
+
+.ficha-tecnica {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.ficha-personal {
+    max-width: 200px;
+    background-color: #1E90FF;
+    border: 1px solid #7B68EE;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 0 auto;
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+.ficha-imagen {
+    border-radius: 5px;
+    width: 70px;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.ficha-nombre {
+    text-shadow: 2px 2px 2px #443907;
+    color: #CD853F;
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.mvp {
+    filter: drop-shadow(-2px 5px 15px rgba(0, 0, 0, 0.7));
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 70px;
+    width: 70px;
+    height: 70px;
+}
+
+.ficha-horas,
+.ficha-descripcion,
+.ficha-personajes {
+    font-size: 800;
+    margin: 10px 0;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.ficha-descripcion {
+    font-style: italic;
+}
+
+.ficha-personajes {
+    font-weight: bold;
+}
+
+.team img {
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    box-shadow: 2px 2px 2px #000;
+}
+
+/* TEXTOS */
+
+p{
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-style: normal; 
+    text-align: start;
+}
+
+h2 {
+    display: inline;
+    background-color: #FF4500;
+    padding: 0px 20px;
+    margin-top: 5px;
+    font-size: 34px;
+    border-block: 5px solid #120e02;
+    color: #000;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+        1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+
+h3 {
+    display: inline;
+    background-color: #FF4500;
+    padding: 0px 20px;
+    margin-top: 5px;
+    font-size: 22px;
+    border-top: 3px solid #fd0303;
+    border-radius: 0px 30px 30px 0px;
+    color: #DAA520;
+    text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000,
+        1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000;
+}
+
+/* Orden Titulos */
+
+.titulos{
+    display: block;
+    text-align: center;
+}
+
+/* boton subir */
+.btnBox {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.btnSubir {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.btnSubir a {
+    color: #000;
+    text-decoration: none;
+}
+
+.btnSubir:hover {
+    background-color: #1E90FF;
+}
+
+
+/* ------------------------------------------------------------------------------- */
+
+/* RESPONSIVE */
+
+/* responsive de ficha tecnica ------------------------------ */
+@media (max-width: 375px) {
+    .sectionFichaTecnica {
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+
+
+/* FIN DE CODIGO PARA RESPONSIVE */

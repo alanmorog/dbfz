@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TORNEO DBZ FIGHTER </title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/icons/Akira_Toriyama.webp" type="logo">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik+Mono+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+
+    <!-- HEADER Y NAVEGADOR ------------------------------------------------------------------------>
+    <header>
+        <div class="imagesBackground">
+            <!--     <img class="banner" src="./assets/img/dbfz_banner.webp" alt=""> -->
+        </div>
+        <img class="logo" src="./assets/img/dbfz_biglogo.webp" alt="">
+        <!-- <h1>DBFZ</h1> -->
+        <section id="navBar">
+            <nav class="navBar">
+                <ul>
+                    <li><a class="navLink" href="#rankingliga">Ranking Liga</a></li>
+                    <li><a class="navLink" href="#tabla">Tabla</a></li>
+                    <li><a class="navLink" href="#sectionFichaTecnica">Ficha Tecnica</a></li>
+                    <li><a class="navLink" href="#torneos">Torneos</a></li>
+                    <li><a class="navLink" href="#tesoro">Tesoro</a></li>
+
+                </ul>
+            </nav>
+        </section>
+
+
+
+        <!-- Opción a ocultar/mostrar ------------------------------------------------------------------------>
+        <form id="login">
+            <h4>Solo Admin</h4>
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Ingresar</button>
+        </form>
+    </header>
+
+    <hr>
+
+
+    <div id="menuOculto" style="display: none;">
+        <h2>Menú Oculto</h2>
+        <ul>
+            <li><a href="#">Editar</a></li>
+            <li><a href="#">Opción 2</a></li>
+            <li><a href="#">Opción 3</a></li>
+        </ul>
+    </div>
+    <hr>
+
+    <!-- RANKING LIGA ------------------------------------------------------------------------>
+    <section id="rankingliga">
+        <h2 class="titulos">Ranking liga</h2>
+        <div class="ranking" id="resultado"></div>
+    </section>
+
+    <hr>
+
+    <!-- Ficha Tecnica ------------------------------------------------------------------------>
+    <section class="sectionFichaTecnica" id="sectionFichaTecnica">
+        <div>
+            <h2 class="titulos">Ficha Tecnica</h2>
+        </div>
+        <div class="ficha-tecnica">
+            <div class="ficha-personal">
+                <img class="ficha-imagen"
+                    src="https://avatars.akamai.steamstatic.com/c7de406b716667261746e5d239798469841e5ca6_medium.jpg"
+                    alt="">
+                <h4 class="ficha-nombre">Pipi</h4>
+                <p class="ficha-horas">Horas de juego: 11,4hs</p>
+                <p class="ficha-descripcion">Personajes Usados</p>
+                <p class="ficha-personajes"></p>
+                <div class="team">
+                    <img src="./assets/img/icon-pjs/vegetaBase.webp" alt="">
+                    <img src="./assets/img/icon-pjs/cell.webp" alt="">
+                    <img src="./assets/img/icon-pjs/gokuSSJ.webp" alt="">
+                    <!-- <img src="./assets/img/icon-pjs/n18.webp" alt=""> -->
+                </div>
+            </div>
+
+            <div class="ficha-personal">
+                <img class="ficha-imagen"
+                    src="https://avatars.akamai.steamstatic.com/7315538d9707c82a353ba05aad74fd0c45cabb02_full.jpg"
+                    alt="">
+                <h4 class="ficha-nombre">Gino</h4>
+                <p class="ficha-horas">Horas de juego: 5,4 hs</p>
+                <p class="ficha-descripcion">Personajes Usados</p>
+                <p class="ficha-personajes"></p>
+                <div class="team">
+                    <img src="./assets/img/icon-pjs/thenshinhan.webp" alt="">
+                    <img src="./assets/img/icon-pjs/krillin.webp" alt="">
+                    <img src="./assets/img/icon-pjs/n18.webp" alt="">
+                </div>
+            </div>
+
+            <div class="ficha-personal">
+                <img class="mvp" src="./assets/icons/mvp.png" alt="">
+                <img class="ficha-imagen"
+                    src="https://avatars.akamai.steamstatic.com/62d6b9d61413cea4be326cf4c71fa3239cc6d414_full.jpg"
+                    alt="">
+                <h4 class="ficha-nombre">Dario</h4>
+                <p class="ficha-horas">Horas de juego: 12 hs</p>
+                <p class="ficha-descripcion">Personajes Usados</p>
+                <p class="ficha-personajes"></p>
+                <div class="team">
+                    <img src="./assets/img/icon-pjs/kefla.webp" alt="">
+                    <img src="./assets/img/icon-pjs/n21.webp" alt="">
+                    <img src="./assets/img/icon-pjs/janemba.webp" alt="">
+                </div>
+            </div>
+
+            <div class="ficha-personal">
+                <img class="ficha-imagen"
+                    src="https://avatars.akamai.steamstatic.com/59f31b7b7f30c9287108bc054abadf83b4e10e63_full.jpg"
+                    alt="">
+                <h4 class="ficha-nombre">Alan</h4>
+                <p class="ficha-horas">Horas de juego: 12,5 hs</p>
+                <p class="ficha-descripcion">Personajes Usados</p>
+                <p class="ficha-personajes"></p>
+                <div class="team">
+                    <img src="./assets/img/icon-pjs/hiy.webp" alt="">
+                    <img src="./assets/img/icon-pjs/roshi.webp" alt="">
+                    <img src="./assets/img/icon-pjs/yamcha.webp" alt="">
+                </div>
+            </div>
+
+            <div class="ficha-personal">
+                <img class="ficha-imagen"
+                    src="https://avatars.akamai.steamstatic.com/d69cdb1b2632880f5b348337be83fb59eab49dc7_full.jpg"
+                    alt="">
+                <h4 class="ficha-nombre">Cuba</h4>
+                <p class="ficha-horas">Horas de juego: 10 hs</p>
+                <p class="ficha-descripcion">Personajes Usados</p>
+                <p class="ficha-personajes"></p>
+                <div class="team">
+                    <img src="./assets/img/icon-pjs/broly.webp" alt="">
+                    <img src="./assets/img/icon-pjs/kidBOO.webp" alt="">
+                    <img src="./assets/img/icon-pjs/gohanAdulto.webp" alt="">
+                </div>
+            </div>
+
+            <div class="ficha-personal">
+                <img class="ficha-imagen" src="./assets/img/son.PNG" alt="">
+                <h4 class="ficha-nombre">Sergio</h4>
+                <p class="ficha-horas">Horas de juego: 8hs</p>
+                <p class="ficha-descripcion">Personajes Usados</p>
+                <p class="ficha-personajes"></p>
+                <div class="team">
+                    <img src="./assets/img/icon-pjs/vegetaSSJ.webp" alt="">
+                    <img src="./assets/img/icon-pjs/majinBOO.webp" alt="">
+                    <img src="./assets/img/icon-pjs/gotenks.webp" alt="">
+                </div>
+            </div>
+
+            <div class="ficha-personal">
+                <img class="ficha-imagen" src="./assets/img/grillo.PNG" alt="">
+                <h4 class="ficha-nombre">Grillo</h4>
+                <p class="ficha-horas">Horas de juego: 10hs</p>
+                <p class="ficha-descripcion">Personajes Usados</p>
+                <p class="ficha-personajes"></p>
+                <div class="team">
+                    <img src="./assets/img/icon-pjs/bardock.webp" alt="">
+                    <img src="./assets/img/icon-pjs/picoro.webp" alt="">
+                    <img src="./assets/img/icon-pjs/freezer.webp" alt="">
+                </div>
+            </div>
+
+            <div class="ficha-personal">
+                <img class="ficha-imagen"
+                    src="https://avatars.akamai.steamstatic.com/6c05d644daf5e0299b6512729ced3268dd2455cd_full.jpg"
+                    alt="">
+                <h4 class="ficha-nombre">Dimox</h4>
+                <p class="ficha-horas">Horas de juego: 4hs</p>
+                <p class="ficha-descripcion">Personajes Usados</p>
+                <p class="ficha-personajes"></p>
+                <div class="team">
+                    <img src="./assets/img/icon-pjs/trunksSSJ.webp" alt="">
+                    <img src="./assets/img/icon-pjs/gotenks.webp" alt="">
+                    <img src="./assets/img/icon-pjs/n18.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- faq ------------------------------------------------------------------------>
+    <section class="faq">
+        <h2 class="titulos">FAQ</h2>
+        <div class="rondas">
+            <h3>Las rondas se definen por:</h3>
+            <p>Puntos: cada pelea 3 vs 3 vale 1 punto, el número máximo por ronda es 3 puntos al ganar las tres
+                peleas
+            </p>
+            <p>Victorias: las rondas se definen por ft2 (a la mejor de tres).. si tenés dos peleas ganadas te llevas
+                la
+                victoria, al ganar el ft2 te sumas 1 punto de victoria.</p>
+            <p>Derrotas: al perder el ft2 te llevas 1 punto de Derrota.</p>
+            <p>#Ejemplo1.. terminaste la ronda y ganas las tres peleas tenés:<br>
+                //////Puntos 3 <br>
+                /////victorias 1 <br>
+                /////derrotas 0 <br></p>
+
+            <p>
+                #Ejemplo2.. terminaste la ronda y ganas dos peleas y perdés una..<br>
+                /////Puntos 2<br>
+                /////Victorias 1<br>
+                /////Derrotas 0<br>
+            </p>
+
+            <p>
+                #Ejemplo3.. terminas la ronda y ganas una pelea y perdés dos..<br>
+                /////Puntos 1<br>
+                /////Victorias 0<br>
+                /////Derrotas 1<br>
+            </p>
+        </div>
+        <div class="puntaje">
+            <h3>Importancia de los puntajes:</h3>
+            <h4>Puntos > victorias > derrotas</h4>
+        </div>
+
+        <div class="informacion">
+            <p> Cuando puedo cambiar de personaje o team?
+                -Cada jugador elegirá a su team el cual usará en la primera pelea.. el jugador que logre ganar la
+                pelea
+                se verá obligado a permanecer con el mismo team y el jugador que perdió la pelea tiene la opción de
+                seguir con el mismo team o cambiar.. el cambiio de equipo queda a criterio del jugador teniendo en
+                cuenta la situacion y su estrategia armada para la ronda.
+            </p><br><br>
+
+            <p>
+                solo se podrá re jugar la pelea en caso de desconexión de server..
+                -si algún jugador presenta problema de retraso por conexión o lag solo se podrá re jugar la pelea en
+                el
+                caso de que ambos jugadores esten de acuerdo o si la partida fue grabada y es muy notorio el
+                desfasaje
+                en la pelea.
+            </p><br><br>
+
+            <p>
+                Al ser la liga compuesta por 10 jugadores es importante tener en cuenta que el último puesto y el
+                ante
+                último puesto de la misma, no clasificará para el torneo final teniendo en cuenta que el torneo se
+                compondrá por 8 jugadores.
+            </p><br><br>
+
+            <p>
+                Las rondas por jornada en liga se pueden reprogramar dependiendo de la necesidad de los jugadores
+
+
+                La única jornada que no se puede reprogramar es la última, si alguien falta queda descalificado..
+            </p><br><br>
+        </div>
+
+        <div class="torneoFinal">
+            <h3>Torneo final</h3>
+            <p>
+                -el torneo será compuesto por 8 jugadores los cuales en primera ronda (8vos) tendrán cada uno 2
+                vidas
+                las cuales solo se usarán en esa ronda y tomarán relevancia en la final.
+
+                -Los cuatro ganadores pasarán a 4tos de la ronda de ganadores teniendo las 2 vidas intactas.
+
+                -Los cuatro perdedores pasarán a 4tos de la ronda de perdedores habiendo usado 1 vida y teniendo
+                solo 1
+                vida más.
+
+                Cada ronda de ganadores y perdedores tendrán por separado su semifinal y su finalista.
+
+                En la final se enfrentará
+                - El finalista de la fase de ganadores(2vidas)
+                vs
+                - El finalista de la fase de perdedores(1vida)
+
+                El finalista de la fase de perdedores al tener 1 sola vida tiene que recuperar la que perdió ganando
+                1
+                ronda. Y luego al estar parejo tiene que volver a ganar otra ronda para ser el campeón del torneo.
+
+                El finalista de la fase de ganadores al tener las 2 vidas intactas sería el campeón del torneo solo
+                ganando una ronda.
+            </p>
+        </div>
+
+        <div class="premios">
+            <h3>Premio</h3>
+            <p>
+                El total del premio será lo acumulado hasta el momento en que termine la liga..
+
+                1 puesto de la liga se llevará el 50% de lo acumulado
+
+                El otro 50% será el premio del torneo, siendo:
+
+                1 puesto- 50%
+                2 puesto- 30%
+                3 puesto- 20%
+            </p>
+        </div>
+    </section>
+
+    <hr>
+    <!-- TABLA ------------------------------------------------------------------------>
+    <section class="tabla" id="tabla">
+        <div>
+            <h2 class="titulos">Tabla</h2>
+        </div>
+
+        <div>
+            <h2>jornada 1</h2> <br>
+            <p>
+                grillo [3] vs [0] sergio <br>
+                dimox vs cuba (Suspendido)<br>
+                pipi [3] vs [0] alan<br>
+                dario [3] vs [0] gino<br>
+            </p>
+        </div>
+        <br>
+        <hr><br>
+        <div>
+            <h2>Jornada 2</h2><br>
+            <p>
+                dimox [] vs [] cuba (Reprogramado)<br>
+                ----------------------------------<br>
+                sergio [2] vs [1] alan<br>
+                grillo [0] vs [3] cuba<br>
+                dimox [0] vs [3] gino (Abandono)<br>
+                pipi [0] vs [3] Dario<br>
+            </p>
+        </div>
+    </section>
+    <hr>
+
+    <!-- Torneo ------------------------------------------------------------------------>
+    <section id="torneos">
+        <div class="titulos">
+            <h2>Torneo</h2>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- Tesoro ------------------------------------------------------------------------>
+    <section id="tesoro">
+        <div class="titulos">
+            <h2>Tesoro</h2>
+        </div>
+    </section>
+
+    <hr>
+    <div class="btnBox">
+        <a href="#navBar"><button class="btnSubir">Subir</button></a>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./src/scripts/main.js"></script>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js";
+        import { getFirestore } from "firebase/firestore"
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: import.meta.env.apiKey,
+            authDomain: import.meta.env.authDomain,
+            projectId: import.meta.env.projectId,
+            storageBucket: import.meta.env.storageBucket,
+            messagingSenderId: import.meta.env.messagingSenderId,
+            appId: import.meta.env.appId
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+
+        const db = getFirestore(app);
+    </script>
+
+</body>
+
+</html>

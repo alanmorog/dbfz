@@ -1,0 +1,101 @@
+[
+    {
+        "personaje1": "grillo",
+        "puntos1": 3,
+        "victorias1": 1,
+        "derrotas1": 0,
+        "personaje2": "sergio",
+        "puntos2": 0,
+        "victorias2": 0,
+        "derrotas2": 1,
+        "peleas": [
+            {
+                "personaje1": "grillo",
+                "puntos1": 1,
+                "personaje2": "sergio",
+                "puntos2": 0,
+                "link": ""
+            },
+            {
+                "personaje1": "grillo",
+                "puntos1": 1,
+                "personaje2": "sergio",
+                "puntos2": 0,
+                "link": ""
+            },
+            {
+                "personaje1": "grillo",
+                "puntos1": 1,
+                "personaje2": "sergio",
+                "puntos2": 0,
+                "link": ""
+            }
+        ]
+    },
+    {
+        "personaje1": "dimox",
+        "puntos1": 0,
+        "victorias1": 0,
+        "derrotas1": 0,
+        "personaje2": "cuba",
+        "puntos2": 0,
+        "victorias2": 0,
+        "derrotas2": 0,
+        "peleas": [
+            {
+                "personaje1": "dimox",
+                "puntos1": 0,
+                "personaje2": "cuba",
+                "puntos2": 0,
+                "link": ""
+            },
+            {
+                "personaje1": "dimox",
+                "puntos1": 0,
+                "personaje2": "cuba",
+                "puntos2": 0,
+                "link": ""
+            },
+            {
+                "personaje1": "dimox",
+                "puntos1": 0,
+                "personaje2": "cuba",
+                "puntos2": 0,
+                "link": ""
+            }
+        ]
+    },
+    {
+        "personaje1": "pipi",
+        "puntos1": 3,
+        "victorias1": 1,
+        "derrotas1": 0,
+        "personaje2": "alan",
+        "puntos2": 0,
+        "victorias2": 0,
+        "derrotas2": 1,
+        "peleas": [
+            {
+                "personaje1": "pipi",
+                "puntos1": 1,
+                "personaje2": "alan",
+                "puntos2": 0,
+                "link": ""
+            },
+            {
+                "personaje1": "pipi",
+                "puntos1": 1,
+                "personaje2": "alan",
+                "puntos2": 0,
+                "link": ""
+            },
+            {
+                "personaje1": "pipi",
+                "puntos1": 1,
+                "personaje2": "alan",
+                "puntos2": 0,
+                "link": ""
+            }
+        ]
+    }
+]

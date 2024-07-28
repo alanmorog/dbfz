@@ -1,6 +1,8 @@
 # proyecto pagina para dbfz
 
-
+##  link de la pagina en netlify
+[Netlify Page] (https://dbfz.netlify.app/)
+-https://dbfz.netlify.app/
 ## actividad
 
 - cada colaborador debe crear una rama para hacer los cambios, se trabaja sobre el index.html de la raiz y sobre la carpeta javascript

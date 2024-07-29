@@ -56,6 +56,9 @@ header .logo {
     list-style: none;
 }
 
+#toggleButton{
+    display: none;
+}
 .navBar li {
     padding-inline: 50px;
     display: inline-block;
@@ -76,6 +79,9 @@ header .logo {
 }
 
 /* Login */
+#login {
+    display: none;
+}
 form {
     font-family: "Roboto", sans-serif;
     font-size: 20px;
@@ -274,8 +280,59 @@ h3 {
         width: 50%;
         margin: 0 auto;
     }
+
+
+     /* NAVBAR ------------------------------------------------ */
+
+    header {
+        width: 375px;
+    }
+
+    #navbar ul {
+        position: fixed;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+        max-height: 46px; 
+        
+    }
+
+    #navbar.expanded ul{
+        max-height: 200px; 
+    }
+
+    #navbar.expanded #toggleButton{
+        display: none;
+    }
+    .navBar ul {
+        max-width: 375px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-block: 5px solid #120e02;
+        background-color: #ff8c00a8;
+        list-style: none;
+        flex-wrap: wrap;
+    }
+    
+    #toggleButton {
+        display: block;
+        position: fixed;
+        top: 20px;
+        left: 0;
+        background-color: #ff8c00a8;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    /* Estilo básico del navbar */
+        
+
+
+
 }
-
-
-
 /* FIN DE CODIGO PARA RESPONSIVE */

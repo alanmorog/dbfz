@@ -159,3 +159,30 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
 })
 // Obtener el elemento donde se mostrará la tabla
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleButton = document.getElementById('toggleButton');
+    const navbar = document.getElementById('navbar');
+    toggleButton.addEventListener('click', () => {
+        navbar.classList.add('collapsed');
+        if (navbar.classList.contains('collapsed')) {
+            navbar.classList.remove('collapsed');
+            navbar.classList.add('expanded');
+        } else {
+            navbar.classList.remove('expanded');
+            navbar.classList.add('collapsed');
+        }
+
+        // Añadir event listeners a los enlaces del navbar
+        const navLinks = navbar.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (navbar.classList.contains('expanded')) {
+                    navbar.classList.remove('expanded');
+                    navbar.classList.add('collapsed');
+                }
+            });
+        });
+    });
+});

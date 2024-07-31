@@ -17,7 +17,7 @@ body {
 body {
     margin: 0;
     height: 100vh;
-    background: linear-gradient(45deg,#FF4500, #FFA500, #FFD700, #FF8C00);
+    background: linear-gradient(45deg, #FF4500, #FFA500, #FFD700, #FF8C00);
     background-size: 1000% 1000%;
 }
 
@@ -56,9 +56,10 @@ header .logo {
     list-style: none;
 }
 
-#toggleButton{
+#toggleButton {
     display: none;
 }
+
 .navBar li {
     padding-inline: 50px;
     display: inline-block;
@@ -82,6 +83,7 @@ header .logo {
 #login {
     display: none;
 }
+
 form {
     font-family: "Roboto", sans-serif;
     font-size: 20px;
@@ -206,11 +208,11 @@ tr:hover {
 
 /* TEXTOS */
 
-p{
+p {
     justify-content: center;
     font-family: "Roboto", sans-serif;
     font-weight: bold;
-    font-style: normal; 
+    font-style: normal;
     text-align: start;
 }
 
@@ -241,22 +243,34 @@ h3 {
 
 /* Orden Titulos */
 
-.titulos{
+.titulos {
     display: block;
     text-align: center;
 }
 
 /* boton subir */
 .btnBox {
+
     text-align: center;
     width: 50%;
     margin: 0 auto;
+
 }
 
 .btnSubir {
+    box-shadow: 5px 5px 5px #000;
+    background-image: url(../../assets/img/icon-pjs/4estrellas.png);
+    background-size: cover;
+    background-position: center;
+    border: none;
+    color: #000;
+    font-size: 25px;
+    padding: 10px 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    margin-bottom: 40px;
 }
 
 .btnSubir a {
@@ -265,7 +279,18 @@ h3 {
 }
 
 .btnSubir:hover {
-    background-color: #1E90FF;
+    background-image: url('ruta/a/tu/imagen.jpg');
+    /* Ruta a tu imagen */
+    background-size: cover;
+    /* Ajusta la imagen para cubrir el botón */
+    background-position: center;
+    /* Centra la imagen en el botón */
+    opacity: 0.9;
+    /* Opacidad de la imagen de fondo */
+    transition: opacity 0.3s ease;
+    /* Transición suave para el cambio de opacidad */
+    z-index: -1;
+    color: #000;
 }
 
 
@@ -282,7 +307,7 @@ h3 {
     }
 
 
-     /* NAVBAR ------------------------------------------------ */
+    /* NAVBAR ------------------------------------------------ */
 
     header {
         width: 375px;
@@ -292,17 +317,18 @@ h3 {
         position: fixed;
         overflow: hidden;
         transition: max-height 0.3s ease-out;
-        max-height: 46px; 
-        
+        max-height: 46px;
+
     }
 
-    #navbar.expanded ul{
-        max-height: 200px; 
+    #navbar.expanded ul {
+        max-height: 200px;
     }
 
-    #navbar.expanded #toggleButton{
+    #navbar.expanded #toggleButton {
         display: none;
     }
+
     .navBar ul {
         max-width: 375px;
         position: fixed;
@@ -316,7 +342,7 @@ h3 {
         list-style: none;
         flex-wrap: wrap;
     }
-    
+
     #toggleButton {
         display: block;
         position: fixed;
@@ -329,10 +355,77 @@ h3 {
         cursor: pointer;
         font-size: 20px;
     }
+
     /* Estilo básico del navbar */
-        
-
-
-
 }
+
 /* FIN DE CODIGO PARA RESPONSIVE */
+
+
+
+/* TABLA DE ENFRENTAMIENTOS */
+.pelea1j1{
+    display: none;
+}
+.pelea1j1.collapsed {
+    display: none;
+}
+
+.pelea1j1.expanded {
+    display: block;
+    height: 40px;
+    background-color: #1E90FF;
+}
+
+
+/* Estilo general de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+/* Estilo para la ventana modal */
+.modal {
+    display: none; /* Oculta el modal por defecto */
+    position: fixed; /* Fija el modal en la pantalla */
+    z-index: 1000; /* Asegura que el modal esté encima del contenido */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Añade scroll si es necesario */
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo oscuro con opacidad */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto; /* Centra el modal vertical y horizontalmente */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ajusta el ancho del modal */
+    max-width: 800px; /* Ancho máximo del modal */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

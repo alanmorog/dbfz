@@ -186,3 +186,75 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Obtener todos los botones "Ver más"
+    const btnVerMas = document.querySelectorAll('.btnVerMas');
+
+    // Iterar sobre los botones
+    btnVerMas.forEach(button => {
+        button.addEventListener('click', function () {
+            // Obtener la fila p1j1 (la fila que contiene el botón)
+            const row = this.closest('tr');
+            // Obtener todas las filas pelea1j1 que siguen a la fila p1j1
+            let nextRow = row.nextElementSibling;
+
+            // Alternar la visibilidad de las filas pelea1j1
+            while (nextRow && nextRow.classList.contains('pelea1j1')) {
+                if (nextRow.style.display === 'none' || !nextRow.style.display) {
+                    nextRow.style.display = 'table-row'; // Mostrar fila
+                    this.textContent = 'Ver menos'; // Cambiar el texto del botón
+                } else {
+                    nextRow.style.display = 'none'; // Ocultar fila
+                    this.textContent = 'Ver más'; // Cambiar el texto del botón
+                }
+                nextRow = nextRow.nextElementSibling;
+            }
+        });
+    });
+});
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Obtener todos los botones "Link no found"
+    const btnVideo = document.querySelectorAll('.btnVideo');
+    const modal = document.getElementById('videoModal');
+    const closeBtn = document.querySelector('.close');
+    const videoPlayer = document.getElementById('videoPlayer');
+
+    // Función para abrir el modal
+    function openModal(videoUrl) {
+        videoPlayer.src = videoUrl; // Establece la URL del video en el iframe
+        modal.style.display = 'block'; // Muestra el modal
+    }
+
+    // Función para cerrar el modal
+    function closeModal() {
+        modal.style.display = 'none'; // Oculta el modal
+        videoPlayer.src = ''; // Detiene el video al cerrar el modal
+    }
+
+    // Evento para abrir el modal al hacer clic en un botón
+    btnVideo.forEach(button => {
+        button.addEventListener('click', function () {
+            const videoUrl = this.getAttribute('data-video'); // Obtiene la URL del video del atributo data
+            openModal(videoUrl);
+        });
+    });
+
+    // Evento para cerrar el modal al hacer clic en la X
+    closeBtn.addEventListener('click', function () {
+        closeModal();
+    });
+
+    // Cierra el modal si se hace clic fuera del contenido
+    window.addEventListener('click', function (event) {
+        if (event.target === modal) {
+            closeModal();
+        }
+    });
+});

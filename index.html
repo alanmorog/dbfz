@@ -315,102 +315,373 @@
         <div>
             <h2 class="titulos">Tabla</h2>
         </div>
-        <!-- -------------------------------------------------------- -->
-        <table>
-            <thead>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Puntos</th>
-                    <th>Puntos</th>
-                    <th>Nombre</th>
-                    <th>Detalle</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="p1j1">
-                    <td><img src="./assets/img/grillo.PNG" style="width: 30px; height: 30px; border-radius: 50%;">Grillo </td>
-                    <td>3</td>
-                    <td>0</td>
-                    <td><img src="./assets/img/son.PNG" style="width: 30px; height: 30px; border-radius: 50%;">Sergio </td>
-                    <td><button class="btnVerMas">Ver mas</button></td>
-                    <tr class="pelea1j1">
-                        <td>Grillo</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>Sergio</td>
-                        <td><button class="btnVideo" data-video="https://www.youtube.com/watch?v=p46PJffLWw4&ab_channel=cheMoroVods">Link</button></td>
-                    </tr>
-                    <tr class="pelea1j1">
-                        <td>Grillo</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>Sergio</td>
-                        <td><button class="btnVideo" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">Link no found</button></td>
-                    </tr>
-                    <tr class="pelea1j1">
-                        <td>Grillo</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>Sergio</td>
-                        <td><button class="btnVideo" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">Link no found</button></td>
-                    </tr>
-                </tr>
-                <tr>
-                    <td>Dimox</td>
-                    <td>suspendido</td>
-                    <td>suspendido</td>
-                    <td>Cuba</td>
-                    <td><button>Ver mas</button></td>
-                </tr>
-                <tr>
-                    <td>Pipi</td>
-                    <td>3</td>
-                    <td>0</td>
-                    <td>Alan</td>
-                    <td><button>Ver mas</button></td>
-                </tr>
-                <tr>
-                    <td>Dario</td>
-                    <td>3</td>
-                    <td>0</td>
-                    <td>Gino</td>
-                    <td><button>Ver mas</button></td>
-                </tr>
-                
-                <!-- Agrega más filas según sea necesario -->
-            </tbody>
-        </table>
-
-            <!-- Modal -->
-        <div id="videoModal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <iframe id="videoPlayer" width="100%" height="500" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </div>
-        <!-- ----------------------------------------------- -->
 
         <div>
             <h2>jornada 1</h2> <br>
-            <p>
-                grillo [3] vs [0] sergio <br>
-                dimox vs cuba (Suspendido)<br>
-                pipi [3] vs [0] alan<br>
-                dario [3] vs [0] gino<br>
-            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Puntos</th>
+                        <th>Puntos</th>
+                        <th>Nombre</th>
+                        <th>Detalle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="p1j1">
+                        <td><img src="./assets/img/grillo.PNG" style="width: 30px; height: 30px; border-radius: 50%;"> Grillo </td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td><img src="./assets/img/son.PNG" style="width: 30px; height: 30px; border-radius: 50%;"> Sergio </td>
+                        <td><button class="btnVerMas">Ver mas</button></td>
+                        <tr class="pelea1j1">
+                            <td>Grillo</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>Sergio</td>
+                            <td><button class="btnVideo" data-video="https://www.youtube.com/embed/p46PJffLWw4">Ver Pelea</button></td>
+                        </tr>
+                        <tr class="pelea1j1">
+                            <td>Grillo</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>Sergio</td>
+                            <td><button class="btnVideo" data-video="https://www.youtube.com/embed/Z2AufbqEsj8">Ver Pelea</button></td>
+                        </tr>
+                        <tr class="pelea1j1">
+                            <td>Grillo</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>Sergio</td>
+                            <td><button class="btnVideo" data-video="https://www.youtube.com/embed/gb8UCN6OS3g">Ver Pelea</button></td>
+                        </tr>
+                    </tr>
+                    <tr>
+                        <td><img src="./assets/img/dimox.jpg" style="width: 30px; height: 30px; border-radius: 50%;"> Dimox</td>
+                        <td>suspendido</td>
+                        <td>suspendido</td>
+                        <td><img src="./assets/img/cuba.jpg" style="width: 30px; height: 30px; border-radius: 50%;"> Cuba</td>
+                        <td>Encuentro Suspendido</td>
+                    </tr>
+                    <tr>
+                        <td><img src="./assets/img/pipi.jpg" style="width: 30px; height: 30px; border-radius: 50%;"> Pipi</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td><img src="./assets/img/alan.jpg" style="width: 30px; height: 30px; border-radius: 50%;"> Alan</td>
+                        <td><button class="btnVerMas">Ver mas</button></td>
+                        <tr class="pelea1j1">
+                            <td>Pipi</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>Alan</td>
+                            <td><button class="btnVideo" data-video="https://www.youtube.com/embed/Bzz-xwDtbcs">Ver Pelea</button></td>
+                        </tr>
+                        <tr class="pelea1j1">
+                            <td>Pipi</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>Alan</td>
+                            <td><button class="btnVideo" data-video="https://www.youtube.com/embed/3lCLtbdWoyg">Ver Pelea</button></td>
+                        </tr>
+                        <tr class="pelea1j1">
+                            <td>Pipi</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>Alan</td>
+                            <td><button class="btnVideo" data-video="https://www.youtube.com/embed/5nLDJnADdSY">Ver Pelea</button></td>
+                        </tr>
+                    </tr>
+                    <tr>
+                        <td><img src="./assets/img/dario.jpg" style="width: 30px; height: 30px; border-radius: 50%;"> Dario</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td><img src="./assets/img/gino.jpg" style="width: 30px; height: 30px; border-radius: 50%;"> Gino</td>
+                        <td><button class="btnVerMas">Ver mas</button></td>
+                        <tr class="pelea1j1">
+                            <td>Dario</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>Gino</td>
+                            <td><button class="btnVideo" data-video="https://www.youtube.com/embed/iIIgNJQR8wk">Ver Pelea</button></td>
+                        </tr>
+                        <tr class="pelea1j1">
+                            <td>Dario</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>Gino</td>
+                            <td><button class="btnVideo" data-video="https://www.youtube.com/embed/BhpSa10hAcog">Ver Pelea</button></td>
+                        </tr>
+                        <tr class="pelea1j1">
+                            <td>Dario</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>Gino</td>
+                            <td><button class="btnVideo" data-video="https://www.youtube.com/embed/BA28DLASrKE">Ver Pelea</button></td>
+                        </tr>
+                    </tr>
+                    
+                    
+                    <!-- Agrega más filas según sea necesario -->
+                </tbody>
+            </table>
+    
+                <!-- Modal -->
+            <div id="videoModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <iframe id="videoPlayer" width="100%" height="500" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
         </div>
         <br>
         <hr><br>
+
+
         <div>
             <h2>Jornada 2</h2><br>
-            <p>
-                dimox [] vs [] cuba (Reprogramado)<br>
-                ----------------------------------<br>
-                sergio [2] vs [1] alan<br>
-                grillo [0] vs [3] cuba<br>
-                dimox [0] vs [3] gino (Abandono)<br>
-                pipi [0] vs [3] Dario<br>
-            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Puntos</th>
+                        <th>Puntos</th>
+                        <th>Nombre</th>
+                        <th>Detalle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="p1j1">
+                        <td><img src="./assets/img/son.PNG" style="width: 30px; height: 30px; border-radius: 50%;"> Sergio </td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td><img src="./assets/img/alan.jpg" style="width: 30px; height: 30px; border-radius: 50%;"> Alan</td>
+                        <td><button class="btnVerMas">Ver mas</button></td>
+                        <tr class="pelea1j1">
+                            <td>Sergio</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>Alan</td>
+                            <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        </tr>
+                        <tr class="pelea1j1">
+                            <td>Sergio</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>Alan</td>
+                            <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        </tr>
+                        <tr class="pelea1j1">
+                            <td>Sergio</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>Alan</td>
+                            <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        </tr>
+                    </tr>
+                    <tr>
+                        <td><img src="./assets/img/grillo.PNG" style="width: 30px; height: 30px; border-radius: 50%;"> Grillo </td>
+                        <td>0</td>
+                        <td>3</td>
+                        <td><img src="./assets/img/cuba.jpg" style="width: 30px; height: 30px; border-radius: 50%;"> Cuba</td>
+                        <td><button class="btnVerMas">Ver mas</button></td>
+                        <tr class="pelea1j1">
+                            <td>Grillo</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>Cuba</td>
+                            <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        </tr>
+                        <tr class="pelea1j1">
+                            <td>Grillo</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>Cuba</td>
+                            <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        </tr>
+                        <tr class="pelea1j1">
+                            <td>Grillo</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>Cuba</td>
+                            <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        </tr>
+                    </tr>
+                    <tr>
+                        <td><img src="./assets/img/dimox.jpg" style="width: 30px; height: 30px; border-radius: 50%;"> Dimox</td>
+                        <td>0</td>
+                        <td>3</td>
+                        <td><img src="./assets/img/gino.jpg" style="width: 30px; height: 30px; border-radius: 50%;"> Gino</td>
+                        <td>Abandono</td>
+                    </tr>
+                    <tr>
+                        <td><img src="./assets/img/pipi.jpg" style="width: 30px; height: 30px; border-radius: 50%;"> Pipi</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td><img src="./assets/img/dario.jpg" style="width: 30px; height: 30px; border-radius: 50%;"> Dario</td>
+                        <td><button class="btnVerMas">Ver mas</button></td>
+                        <tr class="pelea1j1">
+                            <td>Pipi</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>Dario</td>
+                            <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        </tr>
+                        <tr class="pelea1j1">
+                            <td>Pipi</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>Dario</td>
+                            <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        </tr>
+                        <tr class="pelea1j1">
+                            <td>Pipi</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>Dario</td>
+                            <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        </tr>
+                    </tr>
+                    
+                    
+                    <!-- Agrega más filas según sea necesario -->
+                </tbody>
+            </table>
+        </div>
+
+        <br>
+        <hr><br>
+
+        <div>
+            <h2>Jornada 3</h2><br>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Puntos</th>
+                        <th>Puntos</th>
+                        <th>Nombre</th>
+                        <th>Detalle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="p1j1">
+                        <td><img src="./assets/img/cuba.jpg" style="width: 30px; height: 30px; border-radius: 50%;"> Cuba </td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td><img src="./assets/img/gino.jpg" style="width: 30px; height: 30px; border-radius: 50%;"> Gino</td>
+                        <td><button class="btnVerMas">Ver mas</button></td>
+                        <tr class="pelea1j1">
+                            <td>Cuba</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>Gino</td>
+                            <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        </tr>
+                        <tr class="pelea1j1">
+                            <td>Cuba</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>Gino</td>
+                            <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        </tr>
+                        <tr class="pelea1j1">
+                            <td>Cuba</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>Gino</td>
+                            <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        </tr>
+                    </tr>
+                    <tr>
+                        <td><img src="./assets/img/son.PNG" style="width: 30px; height: 30px; border-radius: 50%;"> Sergio </td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td><img src="./assets/img/dario.jpg" style="width: 30px; height: 30px; border-radius: 50%;"> Dario</td>
+                        <td><button class="btnVerMas">Ver mas</button></td>
+                        <tr class="pelea1j1">
+                            <td>Sergio</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>Dario</td>
+                            <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        </tr>
+                        <tr class="pelea1j1">
+                            <td>Sergio</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>Dario</td>
+                            <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        </tr>
+                        <tr class="pelea1j1">
+                            <td>Sergio</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>Dario</td>
+                            <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        </tr>
+                    </tr>
+                    <tr>
+                        <td><img src="./assets/img/grillo.PNG" style="width: 30px; height: 30px; border-radius: 50%;"> Grillo</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td><img src="./assets/img/alan.jpg" style="width: 30px; height: 30px; border-radius: 50%;"> Alan</td>
+                        <td><button class="btnVerMas">Ver mas</button></td>
+                        <tr class="pelea1j1">
+                            <td>Grillo</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>Alan</td>
+                            <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        </tr>
+                        <tr class="pelea1j1">
+                            <td>Grillo</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>Alan</td>
+                            <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        </tr>
+                        <tr class="pelea1j1">
+                            <td>Grillo</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>Alan</td>
+                            <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        </tr>
+                    </tr>
+                    <tr>
+                        <td><img src="./assets/img/dimox.jpg" style="width: 30px; height: 30px; border-radius: 50%;"> Dimox</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td><img src="./assets/img/pipi.jpg" style="width: 30px; height: 30px; border-radius: 50%;"> Pipi</td>
+                        <td><button class="btnVerMas">Ver mas</button></td>
+                        <tr class="pelea1j1">
+                            <td>Dimox</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>Pipi</td>
+                            <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        </tr>
+                        <tr class="pelea1j1">
+                            <td>Dimox</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>Pipi</td>
+                            <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        </tr>
+                        <tr class="pelea1j1">
+                            <td>Dimox</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>Pipi</td>
+                            <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        </tr>
+                    </tr>
+                    
+                    
+                    <!-- Agrega más filas según sea necesario -->
+                </tbody>
+            </table>
         </div>
     </section>
     <hr>

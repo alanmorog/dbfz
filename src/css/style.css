@@ -119,7 +119,7 @@ table {
 th,
 td {
     border: 6px solid #ffffff;
-    padding: 8px;
+    padding: 2px;
     text-align: center;
 }
 
@@ -373,6 +373,7 @@ h3 {
 /* TABLA DE ENFRENTAMIENTOS */
 .pelea1j1{
     display: none;
+
 }
 .pelea1j1.collapsed {
     display: none;
@@ -380,9 +381,9 @@ h3 {
 
 .pelea1j1.expanded {
     display: block;
-    height: 40px;
-    background-color: #1E90FF;
+    height: 20px;
 }
+
 
 
 /* Estilo general de la tabla */
@@ -416,7 +417,7 @@ th {
 
 .modal-content {
     background-color: #fff;
-    margin: 15% auto; /* Centra el modal vertical y horizontalmente */
+    margin: 10% auto; /* Centra el modal vertical y horizontalmente */
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Ajusta el ancho del modal */

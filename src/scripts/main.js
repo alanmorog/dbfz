@@ -257,4 +257,29 @@ document.addEventListener('DOMContentLoaded', function () {
             closeModal();
         }
     });
-});
+})
+
+
+//prueba de la API
+
+const steamAPIKey = '0CAA7BA8539E69C267EAA946E6D5E758';
+const steamID = '76561198886586737'; // El SteamID del usuario
+const appID = '	678950'; // El ID del juego del cual quieres obtener las horas
+
+async function getGameHours() {
+    try {
+        const response = await fetch(`https://api.steampowered.com/IPlayerService/GetOwnedGames/v1/?key=${steamAPIKey}&steamid=${steamID}&format=json`);
+        const data = await response.json();
+        const game = data.response.games.find(game => game.appid === parseInt(appID));
+
+        if (game) {
+            document.getElementById('game-hours').textContent = `Horas jugadas en el juego ${appID}: ${game.playtime_forever / 60} horas`;
+        } else {
+            document.getElementById('game-hours').textContent = 'El juego no encontrado en la biblioteca del usuario.';
+        }
+    } catch (error) {
+        console.error('Error al obtener los datos de Steam:', error);
+    }
+}
+
+getGameHours();

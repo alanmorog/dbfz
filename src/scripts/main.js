@@ -31,12 +31,12 @@ const rankingStorage = async (playerRanking) =>{
  */
 let jugadores = [
     { id: 1, nombre: 'Grillo', puntos: 12, victorias: 4, derrotas: 2 },
-    { id: 3, nombre: 'Pipi', puntos: 10, victorias: 4, derrotas: 1 },
-    { id: 4, nombre: 'Dario', puntos: 12, victorias: 4, derrotas: 1 },
+    { id: 3, nombre: 'Pipi', puntos: 14, victorias: 4, derrotas: 1 },
+    { id: 4, nombre: 'Dario', puntos: 16, victorias: 4, derrotas: 1 },
     { id: 5, nombre: 'Sergio', puntos: 6, victorias: 2, derrotas: 4 },
-    { id: 6, nombre: 'Cuba', puntos: 13, victorias: 4, derrotas: 1 },
-    { id: 7, nombre: 'Alan', puntos: 2, victorias: 0, derrotas: 5 },
-    { id: 8, nombre: 'Gino', puntos: 5, victorias: 2, derrotas: 4 },
+    { id: 6, nombre: 'Cuba', puntos: 15, victorias: 4, derrotas: 1 },
+    { id: 7, nombre: 'Alan', puntos: 3, victorias: 0, derrotas: 5 },
+    { id: 8, nombre: 'Gino', puntos: 9, victorias: 2, derrotas: 4 },
     // Agrega más jugadores según sea necesario
 ];
 

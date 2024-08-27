@@ -176,12 +176,18 @@ tr:hover {
 
 section{
     margin: 20px;
-    display: block;
     text-align: center;
     width: 100%;
 }
+#highlights{
+    display: inline-flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+
 
 #highlights .videoConteiner{
+    margin: 10px;
     border-radius: 10px;
     width: 400px;
     height: auto;

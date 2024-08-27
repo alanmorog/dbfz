@@ -24,11 +24,6 @@ const rankingStorage = async (playerRanking) =>{
 }
  */
 
-/* let passwordAdmnin = [{
-    usuario: "alanmorog",
-    pass: 249309
-}]
- */
 let jugadores = [
     { id: 1, nombre: 'Grillo', puntos: 12, victorias: 4, derrotas: 2 },
     { id: 3, nombre: 'Pipi', puntos: 14, victorias: 4, derrotas: 1 },
@@ -62,42 +57,6 @@ let ranking = jugadores.map((jugador, index) => ({
 }))
 
 console.table(ranking)
-
-
-
-// Datos de usuario de ejemplo (simula una base de datos o autenticación)
-const users = [
-    { username: 'admin', password: 'admin123' },
-    { username: 'usuario', password: '12345' }
-];
-
-// Obtener elementos del DOM
-const login = document.getElementById('login');
-const menuOculto = document.getElementById('menuOculto');
-
-// Escuchar el evento submit del formulario
-login.addEventListener('submit', function (event) {
-    event.preventDefault(); // Evitar que el formulario se envíe
-
-    // Obtener los valores de usuario y contraseña
-    const username = login.username.value;
-    const password = login.password.value;
-
-    // Verificar las credenciales
-    const user = users.find(u => u.username === username && u.password === password);
-
-    if (user) {
-        // Mostrar el menú oculto
-        menuOculto.style.display = 'block';
-        // Opcional: Puedes redirigir a otra página aquí si lo deseas
-    } else {
-        alert('Usuario o contraseña incorrectos');
-    }
-
-    // Limpiar campos del formulario (opcional)
-    login.reset();
-});
-
 
 
 document.addEventListener("DOMContentLoaded", (e) => {

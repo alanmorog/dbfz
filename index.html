@@ -24,6 +24,10 @@
     <!-- HEADER Y NAVEGADOR ------------------------------------------------------------------------>
     <header>
         <div class="imagesBackground">
+            <p class="titleImg">End Of The First Round
+                <img src="./assets/img/icon-pjs/4estrellas.png" style="filter: drop-shadow(0px 0px 17px #ffa238);"  alt="">
+            </p>
+
         </div>
         <!-- <img class="logo" src="./assets/img/dbfz_biglogo.webp" alt=""> -->
         <!-- <h1>DBFZ</h1> -->
@@ -41,32 +45,7 @@
                 </ul>
             </nav>
         </section>
-
-
-
-        <!-- Opción a ocultar/mostrar ------------------------------------------------------------------------>
-        <form id="login">
-            <h4>Solo Admin</h4>
-            <label for="username">Usuario:</label>
-            <input type="text" id="username" name="username" required>
-
-            <label for="password">Contraseña:</label>
-            <input type="password" id="password" name="password" required>
-            <button type="submit">Ingresar</button>
-        </form>
     </header>
-
-
-
-
-    <div id="menuOculto" style="display: none;">
-        <h2>Menú Oculto</h2>
-        <ul>
-            <li><a href="#">Editar</a></li>
-            <li><a href="#">Opción 2</a></li>
-            <li><a href="#">Opción 3</a></li>
-        </ul>
-    </div>
 
 
     <!-- RANKING LIGA ------------------------------------------------------------------------>
@@ -75,7 +54,23 @@
         <div class="ranking" id="resultado"></div>
     </section>
 
+    <!-- Highlights -->
 
+    <!-- https://www.youtube.com/embed/12S6kvf44iE -->
+
+    <section>
+        <div><h3>Highlights</h3></div>
+        <div id="highlights">
+            <div class="videoConteiner">
+                <iframe  src="https://www.youtube.com/embed/p46PJffLWw4" frameborder="0"><p>pelea 1</p></iframe>
+                <p>Grillo vs Sergio J1P1</p>
+            </div>   
+            <div class="videoConteiner">
+                <iframe  src="https://www.youtube.com/embed/12S6kvf44iE" frameborder="0"><p>pelea 1</p></iframe>
+                <p>Alan vs Sergio J2P3</p>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -85,7 +80,7 @@
             <h2 class="titulos">Ficha Tecnica</h2>
         </div>
         <div class="ficha-tecnica">
-            <div class="ficha-personal">
+            <div class="ficha-personal"><!-- pipi -->
                 <img class="mvp" src="./assets/icons/mvp.png" alt="">
                 <img class="ficha-imagen" src="./assets/img/pipi.jpg" alt="">
                 <h4 class="ficha-nombre">Pipi</h4>
@@ -100,7 +95,7 @@
                 </div>
             </div>
 
-            <div class="ficha-personal">
+            <div class="ficha-personal"><!-- gino -->
                 <img class="ficha-imagen" src="./assets/img/gino.jpg" alt="">
                 <h4 class="ficha-nombre">Gino</h4>
                 <p class="ficha-horas">Horas de juego: 5,4 hs</p>
@@ -113,7 +108,7 @@
                 </div>
             </div>
 
-            <div class="ficha-personal">
+            <div class="ficha-personal"><!-- dario -->
                 <img class="ficha-imagen" src="./assets/img/dario.jpg" alt="">
                 <h4 class="ficha-nombre">Dario</h4>
                 <p class="ficha-horas">Horas de juego: 12 hs</p>
@@ -126,7 +121,7 @@
                 </div>
             </div>
 
-            <div class="ficha-personal">
+            <div class="ficha-personal"><!-- alan -->
                 <img class="ficha-imagen" src="./assets/img/alan.jpg" alt="">
                 <h4 class="ficha-nombre">Alan</h4>
                 <p class="ficha-horas">Horas de juego: 12,5 hs</p>
@@ -139,7 +134,7 @@
                 </div>
             </div>
 
-            <div class="ficha-personal">
+            <div class="ficha-personal"><!-- cuba -->
                 <img class="ficha-imagen" src="./assets/img/cuba.jpg" alt="">
                 <h4 class="ficha-nombre">Cuba</h4>
                 <p class="ficha-horas">Horas de juego: 10 hs</p>
@@ -152,7 +147,7 @@
                 </div>
             </div>
 
-            <div class="ficha-personal">
+            <div class="ficha-personal"><!-- sergio -->
                 <img class="ficha-imagen" src="./assets/img/son.PNG" alt="">
                 <h4 class="ficha-nombre">Sergio</h4>
                 <p class="ficha-horas">Horas de juego: 8hs</p>
@@ -165,7 +160,7 @@
                 </div>
             </div>
 
-            <div class="ficha-personal">
+            <div class="ficha-personal"><!-- grillo -->
                 <img class="ficha-imagen" src="./assets/img/grillo.PNG" alt="">
                 <h4 class="ficha-nombre">Grillo</h4>
                 <p class="ficha-horas">Horas de juego: 10hs</p>
@@ -177,6 +172,8 @@
                     <img src="./assets/img/icon-pjs/freezer.webp" alt="">
                 </div>
             </div>
+
+            
         </div>
     </section>
     <!-- faq ------------------------------------------------------------------------>
@@ -184,116 +181,122 @@
 
 
 
-    <section class="faq">
+    <section>
         <h2 class="titulos">FAQ</h2>
-        <div class="rondas">
-            <h3>Las rondas se definen por:</h3>
-            <p>Puntos: cada pelea 3 vs 3 vale 1 punto, el número máximo por ronda es 3 puntos al ganar las tres
-                peleas
-            </p>
-            <p>Victorias: las rondas se definen por ft2 (a la mejor de tres).. si tenés dos peleas ganadas te llevas
-                la
-                victoria, al ganar el ft2 te sumas 1 punto de victoria.</p>
-            <p>Derrotas: al perder el ft2 te llevas 1 punto de Derrota.</p>
-            <p>#Ejemplo1.. terminaste la ronda y ganas las tres peleas tenés:<br>
-                //////Puntos 3 <br>
-                /////victorias 1 <br>
-                /////derrotas 0 <br></p>
+        <div class="faq">
+            <div class="rondas"><!-- rondas -->
+                <h3>Las rondas:</h3>
+                <p>Puntos: cada pelea 3 vs 3 vale 1 punto, el número máximo por ronda es 3 puntos al ganar las tres
+                    peleas
+                </p>
+                <p>Victorias: las rondas se definen por ft2 (a la mejor de tres).. si tenés dos peleas ganadas te llevas
+                    la
+                    victoria, al ganar el ft2 te sumas 1 punto de victoria.</p>
+                <p>Derrotas: al perder el ft2 te llevas 1 punto de Derrota.</p>
+                <p>#Ejemplo1.. terminaste la ronda y ganas las tres peleas tenés:<br>
+                    //////Puntos 3 <br>
+                    /////victorias 1 <br>
+                    /////derrotas 0 <br></p>
 
-            <p>
-                #Ejemplo2.. terminaste la ronda y ganas dos peleas y perdés una..<br>
-                /////Puntos 2<br>
-                /////Victorias 1<br>
-                /////Derrotas 0<br>
-            </p>
+                <p>
+                    #Ejemplo2.. terminaste la ronda y ganas dos peleas y perdés una..<br>
+                    /////Puntos 2<br>
+                    /////Victorias 1<br>
+                    /////Derrotas 0<br>
+                </p>
 
-            <p>
-                #Ejemplo3.. terminas la ronda y ganas una pelea y perdés dos..<br>
-                /////Puntos 1<br>
-                /////Victorias 0<br>
-                /////Derrotas 1<br>
-            </p>
-        </div>
-        <div class="puntaje">
-            <h3>Importancia de los puntajes:</h3>
-            <h4>Puntos > victorias > derrotas</h4>
-        </div>
+                <p>
+                    #Ejemplo3.. terminas la ronda y ganas una pelea y perdés dos..<br>
+                    /////Puntos 1<br>
+                    /////Victorias 0<br>
+                    /////Derrotas 1<br>
+                </p>
+            </div>
 
-        <div class="informacion">
-            <p> Cuando puedo cambiar de personaje o team?
-                -Cada jugador elegirá a su team el cual usará en la primera pelea.. el jugador que logre ganar la
-                pelea
-                se verá obligado a permanecer con el mismo team y el jugador que perdió la pelea tiene la opción de
-                seguir con el mismo team o cambiar.. el cambiio de equipo queda a criterio del jugador teniendo en
-                cuenta la situacion y su estrategia armada para la ronda.
-            </p><br><br>
+            <div class="informacion"><!-- info -->
+                <h3>informacion:</h3>
+                <p> Cuando puedo cambiar de personaje o team?
+                    -Cada jugador elegirá a su team el cual usará en la primera pelea.. el jugador que logre ganar la
+                    pelea
+                    se verá obligado a permanecer con el mismo team y el jugador que perdió la pelea tiene la opción de
+                    seguir con el mismo team o cambiar.. el cambiio de equipo queda a criterio del jugador teniendo en
+                    cuenta la situacion y su estrategia armada para la ronda.
+                </p>
 
-            <p>
-                solo se podrá re jugar la pelea en caso de desconexión de server..
-                -si algún jugador presenta problema de retraso por conexión o lag solo se podrá re jugar la pelea en
-                el
-                caso de que ambos jugadores esten de acuerdo o si la partida fue grabada y es muy notorio el
-                desfasaje
-                en la pelea.
-            </p><br><br>
+                <p>
+                    solo se podrá re jugar la pelea en caso de desconexión de server..
+                    -si algún jugador presenta problema de retraso por conexión o lag solo se podrá re jugar la pelea en
+                    el
+                    caso de que ambos jugadores esten de acuerdo o si la partida fue grabada y es muy notorio el
+                    desfasaje
+                    en la pelea.
+                </p>
 
-            <p>
-                Al ser la liga compuesta por 10 jugadores es importante tener en cuenta que el último puesto y el
-                ante
-                último puesto de la misma, no clasificará para el torneo final teniendo en cuenta que el torneo se
-                compondrá por 8 jugadores.
-            </p><br><br>
+                <p>
+                    Al ser la liga compuesta por 10 jugadores es importante tener en cuenta que el último puesto y el
+                    ante
+                    último puesto de la misma, no clasificará para el torneo final teniendo en cuenta que el torneo se
+                    compondrá por 8 jugadores.
+                </p>
 
-            <p>
-                Las rondas por jornada en liga se pueden reprogramar dependiendo de la necesidad de los jugadores
+                <p>
+                    Las rondas por jornada en liga se pueden reprogramar dependiendo de la necesidad de los jugadores
 
 
-                La única jornada que no se puede reprogramar es la última, si alguien falta queda descalificado..
-            </p><br><br>
-        </div>
+                    La única jornada que no se puede reprogramar es la última, si alguien falta queda descalificado..
+                </p>
+            </div>
 
-        <div class="torneoFinal">
-            <h3>Torneo final</h3>
-            <p>
-                -el torneo será compuesto por 8 jugadores los cuales en primera ronda (8vos) tendrán cada uno 2
-                vidas
-                las cuales solo se usarán en esa ronda y tomarán relevancia en la final.
+            <div class="torneoFinal"><!-- torneo final -->
+                <h3>Torneo final</h3>
+                <p>
+                    -el torneo será compuesto por 8 jugadores los cuales en primera ronda (8vos) tendrán cada uno 2
+                    vidas
+                    las cuales solo se usarán en esa ronda y tomarán relevancia en la final.
 
-                -Los cuatro ganadores pasarán a 4tos de la ronda de ganadores teniendo las 2 vidas intactas.
+                    -Los cuatro ganadores pasarán a 4tos de la ronda de ganadores teniendo las 2 vidas intactas.
 
-                -Los cuatro perdedores pasarán a 4tos de la ronda de perdedores habiendo usado 1 vida y teniendo
-                solo 1
-                vida más.
+                    -Los cuatro perdedores pasarán a 4tos de la ronda de perdedores habiendo usado 1 vida y teniendo
+                    solo 1
+                    vida más.
 
-                Cada ronda de ganadores y perdedores tendrán por separado su semifinal y su finalista.
+                    Cada ronda de ganadores y perdedores tendrán por separado su semifinal y su finalista.
 
-                En la final se enfrentará
-                - El finalista de la fase de ganadores(2vidas)
-                vs
-                - El finalista de la fase de perdedores(1vida)
+                    En la final se enfrentará
+                    - El finalista de la fase de ganadores(2vidas)
+                    vs
+                    - El finalista de la fase de perdedores(1vida)
 
-                El finalista de la fase de perdedores al tener 1 sola vida tiene que recuperar la que perdió ganando
-                1
-                ronda. Y luego al estar parejo tiene que volver a ganar otra ronda para ser el campeón del torneo.
+                    El finalista de la fase de perdedores al tener 1 sola vida tiene que recuperar la que perdió ganando
+                    1
+                    ronda. Y luego al estar parejo tiene que volver a ganar otra ronda para ser el campeón del torneo.
 
-                El finalista de la fase de ganadores al tener las 2 vidas intactas sería el campeón del torneo solo
-                ganando una ronda.
-            </p>
-        </div>
+                    El finalista de la fase de ganadores al tener las 2 vidas intactas sería el campeón del torneo solo
+                    ganando una ronda.
+                </p>
+            </div>
 
-        <div class="premios">
-            <h3>Premio</h3>
-            <p>
-                El total del premio será lo acumulado hasta el momento en que termine la liga..
+            <div class="premios"><!-- Premios -->
+                <h3>Premio</h3>
+                <p>
+                    El total del premio será lo acumulado hasta el momento en que termine la liga..
 
-                1 puesto de la liga se llevará el 50% de lo acumulado
+                    1 puesto de la liga se llevará el 50% de lo acumulado
 
-                El otro 50% será el premio del torneo, siendo:
+                    El otro 50% será el premio del torneo, siendo:
 
-                1 puesto- 50%
-                2 puesto- 30%
-                3 puesto- 20%
-            </p>
+                    1 puesto- 50%
+                    2 puesto- 30%
+                    3 puesto- 20%
+                </p>
+            </div>
+
+            <div class="puntaje"><!-- puntaje -->
+                <h3>Importancia de los puntajes:</h3>
+                <h4>Puntos > victorias > derrotas</h4>
+            </div>
+                <img src="./assets/img/Shen_Long_Artwork.webp" style="width: 450px; height: auto; filter: drop-shadow(0px 0px 17px #ffa238);" alt="">
+            
         </div>
     </section>
 
@@ -486,7 +489,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="p1j1">
+                    <tr class="p1j1"><!-- sergio vs alan -->
                         <td><img src="./assets/img/son.PNG" style="width: 30px; height: 30px; border-radius: 50%;">
                             Sergio </td>
                         <td>2</td>
@@ -499,24 +502,24 @@
                         <td>1</td>
                         <td>0</td>
                         <td>Alan</td>
-                        <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        <td><button class="btnVideo" data-video="https://www.youtube.com/embed/JMLYLWUkZ6Y">Ver Pelea</button></td>
                     </tr>
                     <tr class="pelea1j1">
                         <td>Sergio</td>
                         <td>0</td>
                         <td>1</td>
                         <td>Alan</td>
-                        <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        <td><button class="btnVideo" data-video="https://www.youtube.com/embed/LGFZrlwFjBk">Ver Pelea</button></td>
                     </tr>
                     <tr class="pelea1j1">
                         <td>Sergio</td>
                         <td>1</td>
                         <td>0</td>
                         <td>Alan</td>
-                        <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        <td><button class="btnVideo" data-video="https://www.youtube.com/embed/12S6kvf44iE">Ver Pelea</button></td>
                     </tr>
                     </tr>
-                    <tr>
+                    <tr><!-- grillos vs cuba -->
                         <td><img src="./assets/img/grillo.PNG" style="width: 30px; height: 30px; border-radius: 50%;">
                             Grillo </td>
                         <td>0</td>
@@ -529,24 +532,24 @@
                         <td>0</td>
                         <td>1</td>
                         <td>Cuba</td>
-                        <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        <td><button class="btnVideo" data-video="https://www.youtube.com/embed/kX5DPp3W_K4">Ver Pelea</button></td>
                     </tr>
                     <tr class="pelea1j1">
                         <td>Grillo</td>
                         <td>0</td>
                         <td>1</td>
                         <td>Cuba</td>
-                        <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        <td><button class="btnVideo" data-video="https://www.youtube.com/embed/EbzyTeO0uos">Ver Pelea</button></td>
                     </tr>
                     <tr class="pelea1j1">
                         <td>Grillo</td>
                         <td>0</td>
                         <td>1</td>
                         <td>Cuba</td>
-                        <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        <td><button class="btnVideo" data-video="https://www.youtube.com/embed/q-3VwiZ2GA0">Ver Pelea</button></td>
                     </tr>
                     </tr>
-                    <tr>
+                    <tr><!-- pipi vs dario -->
                         <td><img src="./assets/img/pipi.jpg" style="width: 30px; height: 30px; border-radius: 50%;">
                             Pipi</td>
                         <td>0</td>
@@ -559,21 +562,21 @@
                         <td>0</td>
                         <td>1</td>
                         <td>Dario</td>
-                        <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        <td><button class="btnVideo" data-video="https://www.youtube.com/embed/1KzBIXv-JqY">Ver Pelea</button></td>
                     </tr>
                     <tr class="pelea1j1">
                         <td>Pipi</td>
                         <td>0</td>
                         <td>1</td>
                         <td>Dario</td>
-                        <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        <td><button class="btnVideo" data-video="https://www.youtube.com/embed/8pJOwAtAeiE">Ver Pelea</button></td>
                     </tr>
                     <tr class="pelea1j1">
                         <td>Pipi</td>
                         <td>0</td>
                         <td>1</td>
                         <td>Dario</td>
-                        <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        <td><button class="btnVideo" data-video="https://www.youtube.com/embed/erVKuXd8W4M">Ver Pelea</button></td>
                     </tr>
                     </tr>
                     <!-- ------------------ -->
@@ -645,21 +648,21 @@
                         <td>1</td>
                         <td>0</td>
                         <td>Gino</td>
-                        <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        <td><button class="btnVideo" data-video="https://www.youtube.com/embed/cWydBlGhbvQ">Ver Pelea</button></td>
                     </tr>
                     <tr class="pelea1j1">
                         <td>Cuba</td>
                         <td>1</td>
                         <td>0</td>
                         <td>Gino</td>
-                        <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        <td><button class="btnVideo" data-video="https://www.youtube.com/embed/eFi3klSQ-mE">Ver Pelea</button></td>
                     </tr>
                     <tr class="pelea1j1">
                         <td>Cuba</td>
                         <td>1</td>
                         <td>0</td>
                         <td>Gino</td>
-                        <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        <td><button class="btnVideo" data-video="https://www.youtube.com/embed/3mAE2SU3AsE">Ver Pelea</button></td>
                     </tr>
                     </tr>
                     <tr>
@@ -675,21 +678,21 @@
                         <td>0</td>
                         <td>1</td>
                         <td>Dario</td>
-                        <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        <td><button class="btnVideo" data-video="https://www.youtube.com/embed/2BsyKEDXKM0">Ver Pelea</button></td>
                     </tr>
                     <tr class="pelea1j1">
                         <td>Sergio</td>
                         <td>0</td>
                         <td>1</td>
                         <td>Dario</td>
-                        <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        <td><button class="btnVideo" data-video="https://www.youtube.com/embed/UQ_TQywRB6w">Ver Pelea</button></td>
                     </tr>
                     <tr class="pelea1j1">
                         <td>Sergio</td>
                         <td>0</td>
                         <td>1</td>
                         <td>Dario</td>
-                        <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        <td><button class="btnVideo" data-video="https://www.youtube.com/embed/Qa6ZH3lMm88">Ver Pelea</button></td>
                     </tr>
                     </tr>
                     <tr>
@@ -705,21 +708,21 @@
                         <td>1</td>
                         <td>0</td>
                         <td>Alan</td>
-                        <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        <td><button class="btnVideo" data-video="https://www.youtube.com/embed/7ay1jvmVRrw">Ver Pelea</button></td>
                     </tr>
                     <tr class="pelea1j1">
                         <td>Grillo</td>
                         <td>1</td>
                         <td>0</td>
                         <td>Alan</td>
-                        <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        <td><button class="btnVideo" data-video="https://www.youtube.com/embed/ttUMQ56QTn0">Ver Pelea</button></td>
                     </tr>
                     <tr class="pelea1j1">
                         <td>Grillo</td>
                         <td>0</td>
                         <td>1</td>
                         <td>Alan</td>
-                        <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        <td><button class="btnVideo" data-video="https://www.youtube.com/embed/fQg2-4BL1lY">Ver Pelea</button></td>
                     </tr>
                     </tr>
                     <tr>
@@ -789,21 +792,21 @@
                         <td>1</td>
                         <td>0</td>
                         <td>Franco</td>
-                        <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        <td><button class="btnVideo" data-video="https://www.youtube.com/embed/">Ver Pelea</button></td>
                     </tr>
                     <tr class="pelea1j1">
                         <td>Sergio</td>
                         <td>1</td>
                         <td>0</td>
                         <td>Franco</td>
-                        <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        <td><button class="btnVideo" data-video="https://www.youtube.com/embed/">Ver Pelea</button></td>
                     </tr>
                     <tr class="pelea1j1">
                         <td>Sergio</td>
                         <td>1</td>
                         <td>0</td>
                         <td>Franco</td>
-                        <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        <td><button class="btnVideo" data-video="https://www.youtube.com/embed/">Ver Pelea</button></td>
                     </tr>
                     </tr>
                     <tr>
@@ -819,21 +822,21 @@
                         <td>0</td>
                         <td>1</td>
                         <td>Grillo</td>
-                        <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        <td><button class="btnVideo" data-video="https://www.youtube.com/embed/">Ver Pelea</button></td>
                     </tr>
                     <tr class="pelea1j1">
                         <td>Gino</td>
                         <td>0</td>
                         <td>1</td>
                         <td>Grillo</td>
-                        <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        <td><button class="btnVideo" data-video="https://www.youtube.com/embed/">Ver Pelea</button></td>
                     </tr>
                     <tr class="pelea1j1">
                         <td>Gino</td>
                         <td>0</td>
                         <td>1</td>
                         <td>Grillo</td>
-                        <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        <td><button class="btnVideo" data-video="https://www.youtube.com/embed/">Ver Pelea</button></td>
                     </tr>
                     </tr>
                     <tr>
@@ -849,21 +852,21 @@
                         <td>1</td>
                         <td>0</td>
                         <td>Cuba</td>
-                        <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        <td><button class="btnVideo" data-video="https://www.youtube.com/embed/">Ver Pelea</button></td>
                     </tr>
                     <tr class="pelea1j1">
                         <td>Pipi</td>
                         <td>0</td>
                         <td>1</td>
                         <td>Cuba</td>
-                        <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        <td><button class="btnVideo" data-video="https://www.youtube.com/embed/">Ver Pelea</button></td>
                     </tr>
                     <tr class="pelea1j1">
                         <td>Pipi</td>
                         <td>1</td>
                         <td>0</td>
                         <td>Cuba</td>
-                        <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        <td><button class="btnVideo" data-video="https://www.youtube.com/embed/">Ver Pelea</button></td>
                     </tr>
                     </tr>
                     <tr>
@@ -879,21 +882,21 @@
                         <td>1</td>
                         <td>0</td>
                         <td>Alan</td>
-                        <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        <td><button class="btnVideo" data-video="https://www.youtube.com/embed/">Ver Pelea</button></td>
                     </tr>
                     <tr class="pelea1j1">
                         <td>Dario</td>
                         <td>1</td>
                         <td>0</td>
                         <td>Alan</td>
-                        <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        <td><button class="btnVideo" data-video="https://www.youtube.com/embed/">Ver Pelea</button></td>
                     </tr>
                     <tr class="pelea1j1">
                         <td>Dario</td>
                         <td>1</td>
                         <td>0</td>
                         <td>Alan</td>
-                        <td><button class="btnVideo" data-video="">Ver Pelea</button></td>
+                        <td><button class="btnVideo" data-video="https://www.youtube.com/embed/">Ver Pelea</button></td>
                     </tr>
                     </tr>
 

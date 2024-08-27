@@ -30,20 +30,39 @@ body {
     /* background: linear-gradient(45deg, #ff0000, #FFA500, #ffd900f8, #FF8C00);  
     background-size: 1000% 1000%; */
     background: rgb(2,0,36);
-    background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 78%, rgba(0,212,255,1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 78%, rgba(0,212,255,1) 100%);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 78%, rgba(0,212,255,1) 100%);
+    background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 78%, rgb(1, 95, 114) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 78%, rgb(2, 112, 134) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 78%, rgb(2, 91, 109) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);
 }
 
 header {
     height: 100vh;
-    background-image: url('../../assets/img/dragon_ball_fighterz_wallpaper_by_xerex_kai_dbucs5z-pre.jpg');
+    background-image: url('../../assets/img/goku.jpg');
     /* Imagen de fondo para la página */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
     /* Evita que la imagen se repita */
+}
+
+header .titleImg{
+    text-align: center;
+    left: auto;
+    padding: 400px;
+    font-size: 70px;
+    color: rgb(255, 136, 0);
+    text-shadow: 0px 11px 13px rgba(0,0,0,0.68);;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    font-style:italic ;
+}
+
+.imagesBackground img{
+    width: 100px;
+    height: auto;
+
 }
 
 header .logo {
@@ -76,7 +95,7 @@ header .logo {
 }
 
 .navBar li {
-    padding-inline: 50px;
+    padding-inline: 100px;
     display: inline-block;
 }
 
@@ -153,6 +172,35 @@ tr:hover {
     background-color: #ddd;
 }
 
+/* highlights */
+
+section{
+    margin: 20px;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+#highlights .videoConteiner{
+    border-radius: 10px;
+    width: 400px;
+    height: auto;
+    background-color: #2b2929; 
+    box-shadow: 0px 10px 92px 7px rgba(0,0,0,0.51);
+    -webkit-box-shadow: 0px 10px 92px 7px rgba(0,0,0,0.51);
+    -moz-box-shadow: 0px 10px 92px 7px rgba(0,0,0,0.51);
+}
+#highlights .videoConteiner iframe{
+    padding: 5px;
+    width: 380px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+#highlights .videoConteiner p{
+    text-align: center;
+}
+
 /* estilos de Ficha Tecnica -------------------------------------------------------------*/
 
 .ficha-tecnica {
@@ -164,7 +212,7 @@ tr:hover {
 
 .ficha-personal {
     max-width: 200px;
-    background-color: #0b0c0e;
+    background-color: #2b2929;
     border: 1px solid #0b0c0e;
     border-radius: 8px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
@@ -265,8 +313,22 @@ h3 {
 }
 
 
+/* FAQ */
 
-
+.faq{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: stretch;
+    justify-content: start;
+    align-items: baseline;
+}
+.faq div{
+    background-color: #2b2929;
+    padding: 10px;
+    gap: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
 /* ------------------------------------------------------------------------------- */
 
 /* RESPONSIVE */
